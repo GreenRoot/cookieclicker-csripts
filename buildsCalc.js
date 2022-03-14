@@ -2,7 +2,7 @@ function buildsCalc() {
     let nextUpgradePrice = document.querySelector("#tooltip > div > div:nth-child(2) > span");
     let eachTemplateProduces = document.querySelector("#tooltip > div > div.data > b:nth-child(1)");
     let nextUpgradePriceInt = nextUpgradePrice.innerHTML.replace(/\D/gm,"");
-    let eachTemplateProducesInt = eachTemplateProduces.replace(/\D/gm,"");
+    let eachTemplateProducesInt = eachTemplateProduces.innerHTML.replace(/\D/gm,"");
     const toolTips = document.querySelector("#tooltip > div > div:nth-child(2) > span")
     const toolTip = document.querySelector("#tooltip > div > div.description")
     let benefit = NaN
