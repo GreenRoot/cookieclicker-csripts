@@ -1,3 +1,23 @@
+setInterval(() => {
+	document.getElementById('bigCookie').click()
+	}, 50
+)
+
+function checkShimer() {
+    if (document.getElementsByClassName('shimmer').length > 0) {
+        console.log('Печенька на экране!')
+        document.getElementsByClassName('shimmer')[0].click()
+    } else {
+        console.log('Печенек нет ((')
+    }
+}
+
+setInterval(checkShimer, 1000)
+
+document.getElementById('topBar').remove()
+document.getElementById('commentsTextBelow').remove()
+document.getElementById('commentsText').remove()
+
 function buildsCalc() {
     let nextUpgradePrice = document.querySelector("#tooltip > div > div:nth-child(2) > span");
     let eachTemplateProduces = document.querySelector("#tooltip > div > div.data > b:nth-child(1)");
