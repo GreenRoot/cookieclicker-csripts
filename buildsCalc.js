@@ -15,4 +15,4 @@ function buildsCalc() {
     }
 }
 
-setInterval(buildsCalc, 1000)
+setInterval(buildsCalc, 10)
