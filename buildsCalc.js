@@ -27,7 +27,7 @@ function buildsCalc() {
     const toolTip = document.querySelector("#tooltip > div > div.description")
     let benefit = NaN
     
-    if ( toolTips !== null && eachTemplateProduces !== null ) {
+    if ( (toolTips !== null) && (eachTemplateProduces !== null) ) {
         benefit = (nextUpgradePriceInt / eachTemplateProducesInt).toFixed()
         if (document.getElementsByClassName('calcHas').length <= 0) {
             toolTip.insertAdjacentHTML('beforeend', ` <b class="calcHas" style='color: green; font-size: 13px'>${benefit}</b>`)
